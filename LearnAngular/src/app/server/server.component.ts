@@ -9,13 +9,14 @@ export class ServerComponent implements OnInit {
   allowNowServer = false;
   serverCreationStatus = 'no sever war create '
   valueInput = ''
+  serverStatus: string = 'onLine'
 
   constructor() {
 
     setTimeout(() => {
       this.allowNowServer = true
     }, 2000)
-
+    this.serverStatus = Math.random() > 0.5 ? 'onLine' : 'offLine'
   }
 
   ngOnInit(): void {
@@ -36,5 +37,9 @@ export class ServerComponent implements OnInit {
     // cách lấy value input kiểu dữ liệu Event
 
     this.valueInput = (<HTMLInputElement>value.target).value
+  }
+
+  getColor() {
+    return this.serverStatus === 'onLine' ? 'green' : 'red'
   }
 }

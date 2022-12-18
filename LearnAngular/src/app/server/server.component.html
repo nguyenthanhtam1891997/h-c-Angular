@@ -12,7 +12,7 @@
 <input type="text" class="form-control col-lg-4"
 
 
-(input)="onUpdateServerName($event)">
+       (input)="onUpdateServerName($event)">
 
 <p>{{valueInput}}</p>
 
@@ -21,8 +21,11 @@
   add server
 </button>
 <!--<p [innerText]="allowNowServer" ></p>-->
-<p>{{serverCreationStatus}}</p>
-<app-binding-data></app-binding-data>
+<!--<p>{{serverCreationStatus}}</p>-->
+
+<p [ngStyle]="{backgroundColor:getColor()}">{{serverCreationStatus}} {{valueInput}}</p>
+
+<!--<app-binding-data></app-binding-data>-->
 <!--<app-binding-data></app-binding-data>-->
 
 

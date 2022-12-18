@@ -1,2 +1,20 @@
 <!--<p>{{'Server'}} biding data witch Id ___{{serverId}}______and status {{serverStatus}}</p>   cách 1-->
 <p>{{'Server'}} biding data witch Id ___{{serverId}}______and status {{getServerStatus()}}</p>
+
+
+<!-- bài tập databiding-->
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <label>userName</label>
+      <input type="text" class="form-control" [(ngModel)]="userName">
+      <p>{{userName}}</p>
+      <!--      <button class="btn btn-primary" [disabled]="userName===''" (click)="resetUserName()">rest userName</button> cách 1  -->
+      <button class="btn btn-primary" [disabled]="userName===''" (click)="userName=''">rest userName</button>
+    </div>
+  </div>
+</div>
+
+

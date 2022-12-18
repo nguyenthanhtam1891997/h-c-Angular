@@ -7,8 +7,13 @@ import {Component} from "@angular/core";
 export class BindingDataComponent {
   serverId: number = 10;
   serverStatus: string = 'offLife'
+  userName = ''
 
   getServerStatus() {
     return this.serverStatus;
+  }
+
+  resetUserName() {
+    this.userName = ''
   }
 }
