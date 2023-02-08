@@ -10,6 +10,9 @@ import {BindingDataComponent} from "./binding-data/binding-data.component";
 import {FormsModule} from "@angular/forms";
 import {DirectivesComponent} from './directives/directives.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {NgSelect2Module} from "ng-select2";
+import { Select2Module } from 'ng-select2-component';
+
 
 
 @NgModule({
@@ -25,10 +28,13 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgSelect2Module,
+    Select2Module
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+
 })
 export class AppModule {
 }
