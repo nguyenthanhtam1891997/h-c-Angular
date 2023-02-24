@@ -1,6 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { Select2OptionData } from 'ng-select2';
 
 @Component({
   selector: 'app-server',
@@ -12,20 +10,6 @@ export class ServerComponent implements OnInit {
   serverCreationStatus = 'no sever war create '
   valueInput = ''
   serverStatus: string = 'onLine'
-
-
-
-  data = [
-    {id: '1', text: 'Afghanistan'},
-    {id: '2', text: 'Albania'},
-    {id: '3', text: 'Algeria'},
-
-  ];
-  options = {
-    placeholder: 'Select a country',
-    minimumInputLength: 2,
-    allowClear: true
-  };
 
   constructor() {
 
