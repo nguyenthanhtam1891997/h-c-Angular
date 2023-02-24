@@ -8,7 +8,8 @@ import {Component, OnInit} from '@angular/core';
 export class DirectivesComponent implements OnInit {
   serverName = ''
   serverCreated = false;
-
+  options=['a','b','c','d','e','f','g']
+  selectedOption:any
   constructor() {
   }
 
@@ -18,4 +19,5 @@ export class DirectivesComponent implements OnInit {
   addServer() {
     this.serverCreated = true
   }
+
 }
